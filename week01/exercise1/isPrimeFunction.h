@@ -6,22 +6,6 @@
 bool isPrimeInteger(int pTest);
 
 
-bool isPrimeInteger(int pTest) {
-    bool isPrime = true;
-
-    if (pTest <= 1) {
-    return false;
-    }
-
-    for (int i = 2; i < pTest; i++) {
-        if (pTest % i == 0) {
-            isPrime = false;
-            break;
-        }
-    }
-    return isPrime;
-}
-
 #endif
 
 // Run Command: g++ -std=c++17 isPrime.cpp -o isPrime
